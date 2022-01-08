@@ -1,0 +1,14 @@
+body {
+  padding: 0 20px;
+  text-align: center;
+}
+
+input[type=text] {
+  padding: 0 20px;
+  margin: 8px;
+}
+
+button {
+  padding: 0 30px;
+  margin: 8px;
+}
