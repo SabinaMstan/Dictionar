@@ -18,4 +18,5 @@ function searchWordInDictionary() {
   } else {
     alert ('not found');
   }
+  document.getElementById('searchWord').value = '';
 }
