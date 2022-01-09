@@ -5,12 +5,14 @@
   <script src='script.js'></script>
 </head>
 <body >
-  <form id = 'userInput' onsubmit='return false'>
+  <form id = 'userInput' >
     <label class='nameLable' for='userInput'>Add word to dictionary:</label><br>
-    <input id = 'addWord' type = 'text'>
+    <input id = 'addWord' type = 'text' onsubmit='return false'>
     <button id = 'submitWord' type = 'submit' onclick='getInputFromTextBox()'>Submit</button> <br>
+  </form>
+  <form id = 'userSearch' onsubmit='return false'>
     <label class='nameLable' for='searchWord'>Search word in dictionary:</label><br>
-    <input id = 'searchWord' type = 'text'>
+    <input id = 'searchWord' type = 'text' onsubmit='return false'>
     <button id = 'search' type = 'submit' onclick = 'searchWordInDictionary()'>Search</button>
     <p id = 'foundStatus'></p>
   </form>

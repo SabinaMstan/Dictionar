@@ -1,14 +1,17 @@
 let dictionary = [];
 
 document.getElementById('userInput').addEventListener('keyup', function(event) {
-  let buttonId;
-  if (event.keyCode === 13 && document.getElementById('submitWord').input.id === 'addWord') {
-    buttonId = 'submitWord';
-  } else if (event.keyCode === 13  && document.getElementById('search').input.id === 'searchWord') {
-    buttonId = 'search';
-  }
+  if (event.keyCode === 13) {
     event.preventDefault();
-    document.getElementById(buttonId).click();
+    document.getElementById('submitWord').click();
+  }
+});
+
+document.getElementById('userSearch').addEventListener('keyup', function(event) {
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    document.getElementById('search').click();
+  }
 });
 
 function getInputFromTextBox() {
